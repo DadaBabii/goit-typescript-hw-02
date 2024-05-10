@@ -11,6 +11,6 @@ export interface Images {
 export type Response = {
     total: number;
     total_pages: number;
-    results: object[];
+    results: Images[];
 }
 
