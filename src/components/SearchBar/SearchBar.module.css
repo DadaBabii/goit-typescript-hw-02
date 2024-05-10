@@ -1,0 +1,36 @@
+.section {
+  display: block;
+  width: 1200px;
+  height: 50px;
+  background-color: rgba(134, 134, 245, 0.7);
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  display: block;
+  width: 250px;
+  margin-right: 10px;
+  margin-top: 1px;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.button {
+  display: block;
+  width: 100px;
+  margin-top: 1px;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
