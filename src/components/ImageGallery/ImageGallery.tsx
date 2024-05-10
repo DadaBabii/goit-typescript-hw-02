@@ -1,9 +1,10 @@
+import {  MouseEventHandler } from "react";
 import { Images } from "../../types";
 import ImageCard from "../ImageCard/ImageCard";
 import css from "./ImageGallery.module.css";
 type ImageGalleryProps = {
   images: Images[];
-  onClick: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onClick: MouseEventHandler ;
 }
 
 const ImageGallery = ({ images, onClick }:ImageGalleryProps) => {

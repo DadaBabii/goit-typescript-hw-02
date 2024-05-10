@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { MouseEvent, useState } from "react";
 import { useEffect } from "react";
 
 import ImageGallery from "./components/ImageGallery/ImageGallery";
@@ -59,11 +59,12 @@ function App() {
     }
   };
 
-  const onClickImage = (e:React.ChangeEvent<HTMLInputElement>):void => {
-    console.log(e.target.id);
+  const onClickImage = (e:MouseEvent<HTMLImageElement>):void => {
+    
+    const target = e.target as HTMLImageElement; 
 
 
-    const find = images.filter((image) => image.id === e.target.id);
+    const find = images.filter((image) => image.id === target.id);
     setModalImage(find);
 
     openModal();
